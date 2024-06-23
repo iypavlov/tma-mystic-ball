@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.answer {
+  text-align: center;
+  animation: text-focus-in 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.load {
+  position: absolute;
+  text-align: center;
+  animation: tracking-out-expand 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-out-expand {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    letter-spacing: 0.8em;
+    opacity: 0;
+  }
+}
