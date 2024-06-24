@@ -18,7 +18,7 @@
   min-width: 320px;
   min-height: 320px;
   padding: 8px;
-  animation: colorPulse 4s ease-in-out infinite;
+  animation: colorPulse 8s ease-in-out infinite;
 }
 
 .button {
@@ -39,17 +39,17 @@
 
 @keyframes colorPulse {
   0% {
-    box-shadow: 0 0 2px #8e8e8e;
+    box-shadow: 0 -8px 5px rgba(190, 190, 190, 0.5);
     filter: hue-rotate(0);
   }
 
   50% {
-    box-shadow: 0 0 10px #a8e8e8;
+    box-shadow: 0 -5px 15px #a8e8e8;
     filter: hue-rotate(180deg);
   }
 
   100% {
-    box-shadow: 0 0 2px #8e8e8e;
+    box-shadow: 0 -8px 5px rgba(190, 190, 190, 0.5);
     filter: hue-rotate(0);
   }
 }
