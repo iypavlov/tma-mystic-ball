@@ -7,10 +7,4 @@
 
 .github {
   margin-top: 5vw;
-  transition: 0.2s ease;
-  filter: opacity(0.3) drop-shadow(0 0 50px black);
-
-  &:hover {
-    filter: opacity(1) drop-shadow(0 0 40px black);
-  }
 }

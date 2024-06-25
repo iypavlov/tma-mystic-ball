@@ -9,15 +9,16 @@ export const MysticBall = () => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.ball}>
-        {Boolean(count) && <Answer key={count} />}
-      </div>
-      <button
-        className={styles.button}
+      <div
+        className={styles.ball}
         onClick={() => setCount((count) => count + 1)}
       >
-        Узнать
-      </button>
+        {Boolean(count) ? (
+          <Answer key={count} />
+        ) : (
+          <div className={styles.trigger}>Узнать</div>
+        )}
+      </div>
     </div>
   );
 };
